@@ -167,7 +167,8 @@ import levelSpread from '../components/operationData/userAnalysis/levelSpread.vu
 import dayTaskData from '../components/operationData/userAnalysis/dayTaskData.vue';//每日任务统计
 import achieveTaskData from '../components/operationData/userAnalysis/achieveTaskData.vue';//成就任务统计
 // 1-3充值与消费
-
+import withdrawWater from '../components/operationData/rechargeConsumption/withdrawWater.vue';//消费流水
+import rechargeWater from '../components/operationData/rechargeConsumption/rechargeWater.vue';//充值流水
 import financialDaily from '../components/operationData/rechargeConsumption/financialDaily.vue';//财务日报
 import dailyRealTimeRecharge from '../components/operationData/rechargeConsumption/dailyRealTimeRecharge.vue';//每日实时充值数据
 import payUserDataList from '../components/operationData/rechargeConsumption/payUserDataList.vue';//付费用户数据
@@ -414,6 +415,8 @@ export const asyncRouterMap = [
                 hidden: false,
                 meta: { role: ['T1', 'T2', 'P1', 'P2', 'O1', 'O2', 'M'] },
                 children: [
+                	{ path: '/operationData/rechargeConsumption/withdrawWater', component: withdrawWater, name: '提现流水', hidden: false, meta: { role: ['T1', 'T2', 'P1', 'P2', 'O1', 'O2', 'M'] } },  
+                    { path: '/operationData/rechargeConsumption/rechargeWater', component: rechargeWater, name: '充值流水', hidden: false, meta: { role: ['T1', 'T2', 'P1', 'P2', 'O1', 'O2', 'M'] } },  
                     { path: '/operationData/rechargeConsumption/financialDaily', component: financialDaily, name: '财务日报', hidden: false, meta: { role: ['T1', 'T2', 'P1', 'P2', 'O1', 'O2', 'M'] } },                    
                     { path: '/operationData/rechargeConsumption/dailyRealTimeRecharge', component: dailyRealTimeRecharge, name: '分时充值详情', hidden: false, meta: { role: ['T1', 'T2', 'P1', 'P2', 'O1', 'O2', 'M'] } },                    
                     { path: '/operationData/rechargeConsumption/payUserDataList', component: payUserDataList, name: '付费用户数据', hidden: false, meta: { role: ['T1', 'T2', 'P1', 'P2', 'O1', 'O2', 'M'] } },                    
