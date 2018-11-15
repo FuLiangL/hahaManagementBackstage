@@ -15,7 +15,7 @@
             <el-menu-item v-for="(item, indexs) in dataView" :key="indexs" :index="item.path" :router="{path: item.path}">{{item.name}}</el-menu-item>
             <!-- 加上uid查询的功能 -->
             <div class="uidFind">
-                <input v-model="uidFind" placeholder="请输入uid进行查询" />
+                <input v-model="uidFind" placeholder="请输入uid(1000+)查询" />
                 <!-- <div @click="goToShowUidContent()">用户详情</div> -->
                 <div @click="goToShowUidContent()">用户详情</div>
             </div>
@@ -133,7 +133,7 @@ export default {
             var _this = this;
             if(baseConfig.server.indexOf('test')=='-1') {
                 // 正式服，进行6为有效数字的匹配
-                if(/^[0-9]{6}$/.test(_this.uidFind)) {
+                if(/^[0-9]{10}$/.test(_this.uidFind)) {
                     Event.$emit('show-one-user', {
                         uid : _this.uidFind,
                     });
