@@ -38,7 +38,7 @@
 						<el-table-column prop="add_pond_time" label="入池时间"></el-table-column>
 					</el-table>
                     <el-col :span="24" class="toolbar">
-                        <el-pagination layout="total,prev,pager,next,jumper" @current-change="handleCurrentChange" :current-page="page" :page-size="20" :total="totalpage" style="float:right;"></el-pagination>
+                        <el-pagination background layout="total,prev,pager,next,jumper" @current-change="handleCurrentChange" :current-page="page" :page-size="20" :total="totalpage" style="float:right;"></el-pagination>
                     </el-col>
 				</template>
             </el-tab-pane>
@@ -74,7 +74,7 @@
 						<el-table-column prop="reply_num" label="自己二次回应人数"></el-table-column>
 					</el-table>
                     <el-col :span="24" class="toolbar">
-                        <el-pagination layout="total,prev,pager,next,jumper" @current-change="handleCurrentChange1" :current-page="page1" :page-size="20" :total="totalpage1" style="float:right;"></el-pagination>
+                        <el-pagination background layout="total,prev,pager,next,jumper" @current-change="handleCurrentChange1" :current-page="page1" :page-size="20" :total="totalpage1" style="float:right;"></el-pagination>
                     </el-col>
 				</template>
             </el-tab-pane>

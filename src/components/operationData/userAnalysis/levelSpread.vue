@@ -14,7 +14,7 @@
                 </el-form-item>
 				<el-form-item>
                     <span>渠道</span>
-                    <el-select v-model="channelId" multiple filterable collapse-tags style="margin-left: 20px;" placeholder="请选择">
+                    <el-select v-model="channelId" multiple collapse-tags style="margin-left: 20px;" placeholder="请选择">
                         <el-option v-for="(item, key) of channelData" :key="item" :label="item" :value="key">
                         </el-option>
                     </el-select>
@@ -47,8 +47,7 @@
             </el-table>
             <!-- 工具条 -->
             <el-col :span="24" class="toolbar">
-                <el-pagination layout="total,prev, pager, next,jumper" :page-size="20"  @current-change="handleCurrentChange" :current-page="page+1" :total=totalpage style="float:right; ">
-                </el-pagination>
+                <el-pagination background layout="total,prev, pager, next,jumper" :page-size="20"  @current-change="handleCurrentChange" :current-page="page+1" :total=totalpage style="float:right; "></el-pagination>
             </el-col>
         </template>
        

@@ -23,6 +23,7 @@
                     </el-table>
                     <el-col :span="24" class="toolbar">
                         <el-pagination 
+                        background
                         layout="total,prev,pager,next,jumper" 
                         @current-change="oneHandleCurrentChange" 
                         :page-size="20" 
@@ -55,7 +56,6 @@
                             <el-select 
                             v-model="formTwo.channelId" 
                             multiple 
-                            filterable 
                             collapse-tags 
                             style="margin-left:20px;width:180px;" 
                             placeholder="请选择">
@@ -102,6 +102,7 @@
                     </el-table>
                     <el-col :span="24" class="toolbar">
                         <el-pagination 
+                        background
                         layout="total,prev,pager,next,jumper" 
                         @current-change="twoHandleCurrentChange" 
                         :page-size="20" 

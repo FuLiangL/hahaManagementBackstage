@@ -19,7 +19,6 @@
                     <el-select 
                     v-model="channelId" 
                     multiple 
-                    filterable 
                     collapse-tags 
                     style="margin-left:20px;" 
                     placeholder="请选择">
@@ -73,6 +72,7 @@
             </el-table>
             <el-col :span="24" class="toolbar">
 				<el-pagination 
+                background
                 layout="total,prev,pager,next,jumper" 
                 @current-change="handleCurrentChange" 
                 :page-size="20" 

@@ -38,6 +38,7 @@
 					</el-table>
 					<el-col :span="24" class="toolbar">
 						<el-pagination  
+						background
 						layout="total,prev,pager,next,jumper" 
 						@current-change="twoHandleCurrentChange" 
 						:page-size="20" 
@@ -62,6 +63,7 @@
 					</el-table>
 					<el-col :span="24" class="toolbar">
 						<el-pagination 
+						background
 						layout="total,prev,pager,next,jumper" 
 						@current-change="threeHandleCurrentChange" 
 						:page-size="20" 
@@ -112,6 +114,7 @@
 					:span="24"
 					class="toolbar">
 						<el-pagination
+						background
 						layout="total, prev, pager, next, jumper"
 						@current-change="fourHandleCurrentChange"
 						:page-size="21"

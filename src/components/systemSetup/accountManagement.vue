@@ -50,7 +50,7 @@
                 </el-table-column>
             </el-table>
             <el-col :span="24" class="toolbar">
-                <el-pagination layout="total,prev,pager,next,jumper" @current-change="oneHandleCurrentChange" :page-size="1000" :total="formOne.totalPage" style="float: right;"></el-pagination>
+                <el-pagination background layout="total,prev,pager,next,jumper" @current-change="oneHandleCurrentChange" :page-size="1000" :total="formOne.totalPage" style="float: right;"></el-pagination>
             </el-col>
         </template>
         <el-dialog title="添加账号" :visible.sync="addDialog.dialogShow">

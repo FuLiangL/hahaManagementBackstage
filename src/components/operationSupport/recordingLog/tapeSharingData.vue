@@ -44,7 +44,7 @@
 			</el-table>
 			<!-- 工具条 -->
 			<!-- <el-col :span="24" class="toolbar">
-				<el-pagination layout="total,prev, pager, next,jumper" @current-change="handleCurrentChange" :page-size="20" :total=1000 :current-page="page+1" style="float:right; ">
+				<el-pagination background layout="total,prev, pager, next,jumper" @current-change="handleCurrentChange" :page-size="20" :total=1000 :current-page="page+1" style="float:right; ">
 				</el-pagination>
 			</el-col> -->
             <el-dialog title="" class="recordPopup" :visible.sync="dialogFormVisible" center style="text-align:center;">

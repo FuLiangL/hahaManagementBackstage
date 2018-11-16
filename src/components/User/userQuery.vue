@@ -17,7 +17,7 @@
                     </div>
 				</el-form-item>
 				<el-form-item>	
-					<el-select style="width: 120px;" v-model="value" filterable placeholder="渠道号">
+					<el-select style="width: 120px;" v-model="value" placeholder="渠道号">
 						<el-option v-for="item in options" :key="item.value" :label="item.label" :value="item.value"></el-option>
 					</el-select>
 				</el-form-item>
@@ -142,7 +142,7 @@
 			</el-table>
 			<!--工具条-->
 			<el-col :span="24" class="toolbar">
-				<el-pagination layout="total,prev, pager, next,jumper" @current-change="handleCurrentChange" :page-size="20" :total="totalpage" :current-page="page+1" style="float:right; ">
+				<el-pagination background layout="total,prev, pager, next,jumper" @current-change="handleCurrentChange" :page-size="20" :total="totalpage" :current-page="page+1" style="float:right; ">
 				</el-pagination>
 			</el-col>
 		</template>

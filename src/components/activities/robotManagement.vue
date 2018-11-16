@@ -67,6 +67,7 @@
 				<!--工具条-->
 				<el-col :span="24" class="toolbar">
 					<el-pagination 
+					background
 					layout="total,prev,pager,next,jumper" 	
 					@current-change="oneHandleCurrentChange" 
 					:page-size="20" 

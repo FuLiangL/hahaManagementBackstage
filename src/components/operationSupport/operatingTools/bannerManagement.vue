@@ -96,7 +96,7 @@
 					</el-table>
 					<!--工具条-->
 					<el-col :span="24" class="toolbar">
-						<el-pagination layout="total,prev,pager,next,jumper" @current-change="oneHandleCurrentChange" :page-size="20" :total="formOne.TotalPage" style="float:right;"></el-pagination>
+						<el-pagination background layout="total,prev,pager,next,jumper" @current-change="oneHandleCurrentChange" :page-size="20" :total="formOne.TotalPage" style="float:right;"></el-pagination>
 					</el-col>
 				</template>
 			</el-tab-pane>
@@ -182,7 +182,7 @@
 					</el-table>
 					<!--工具条-->
 					<el-col :span="24" class="toolbar">
-						<el-pagination layout="total,prev,pager,next,jumper" @current-change="twoHandleCurrentChange" :page-size="20" :total="formTwo.TotalPage" style="float:right;"></el-pagination>
+						<el-pagination background layout="total,prev,pager,next,jumper" @current-change="twoHandleCurrentChange" :page-size="20" :total="formTwo.TotalPage" style="float:right;"></el-pagination>
 					</el-col>
 				</template>
 			</el-tab-pane>

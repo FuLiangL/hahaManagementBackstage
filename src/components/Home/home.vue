@@ -158,7 +158,7 @@ export default {
 <style lang="css">
 .el-select__tags{
     max-width: auto !important;
-    width: 1000px !important;
+    /* width: 1000px !important; */
 }
 /* 设置uid查询的样式问题 */
 .uidFind{

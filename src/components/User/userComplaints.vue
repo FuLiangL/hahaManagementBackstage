@@ -12,7 +12,7 @@
 				</el-form-item>
 				<el-form-item>
 					<span>投诉类型</span>
-					<el-select style="width: 120px;" v-model="complaintype" filterable placeholder="请选择">
+					<el-select style="width: 120px;" v-model="complaintype" placeholder="请选择">
 						<el-option label="全部" value=""></el-option>
 						<el-option label="已忽略" value="1"></el-option>
 						<el-option label="已警告" value="2"></el-option>
@@ -21,7 +21,7 @@
 				</el-form-item>
 				<el-form-item>
 					<span>投诉原因</span>
-					<el-select style="width: 120px;" v-model="complaincause" filterable placeholder="请选择">
+					<el-select style="width: 120px;" v-model="complaincause" placeholder="请选择">
 						<el-option label="全部" value="全部"></el-option>
 						<el-option label="色情" value="色情"></el-option>
 						<el-option label="欺诈" value="欺诈"></el-option>
@@ -94,7 +94,7 @@
 			</el-table>
 			<!--工具条-->
 			<el-col :span="24" class="toolbar">
-				<el-pagination layout="total,prev, pager, next,jumper" @current-change="handleCurrentChange" :page-size="20" :total="totalpage" style="float:right;"></el-pagination>
+				<el-pagination background layout="total,prev, pager, next,jumper" @current-change="handleCurrentChange" :page-size="20" :total="totalpage" style="float:right;"></el-pagination>
 			</el-col>
 		</template>
 	</section>

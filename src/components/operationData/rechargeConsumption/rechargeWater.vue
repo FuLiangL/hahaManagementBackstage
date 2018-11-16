@@ -100,6 +100,7 @@
             </el-dialog>
             <el-col :span="24" class="toolbar">
 				<el-pagination 
+				background
 				layout="total,prev,pager,next,jumper" 
 				:total="totalpage" 
 				:page-size="20" 
