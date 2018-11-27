@@ -159,10 +159,12 @@ export default {
 			var obj = {};
 			obj.date_s = baseConfig.changeDateTime(_this.formOne.choiceDate[0], 0);
 			obj.date_e = baseConfig.changeDateTime(_this.formOne.choiceDate[1], 0);
+			console.log(_this.formOne.channel.length);
 			if(_this.formOne.channel.length) {
 				for(var i=0; i<_this.formOne.channel.length; i++) {
+					console.log(_this.formOne.channel[i]);
 					if(i==0) {
-						obj.channel += _this.formOne.channel[i];
+						obj.channel = _this.formOne.channel[i];
 					} else {
 						obj.channel += ','+_this.formOne.channel[i];
 					}
